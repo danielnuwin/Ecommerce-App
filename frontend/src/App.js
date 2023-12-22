@@ -1,10 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Container } from "react-bootstrap";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 //RAFCE shortcut to create react component
 const App = () => {
   return (
-    <h1>Welcome to Ecommerce App</h1>
-  )
-}
-
-export default App
+    <>
+      <Header />
+      <main className="py-3">
+        <Container>
+          <h1>Welcome to Daniel's Shop </h1>
+        </Container>
+      </main>
+      <Footer/>
+    </>
+  );
+};
+export default App;
