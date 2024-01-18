@@ -1,7 +1,36 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.2",
+    "colors": "^1.4.0",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0",
     "react-bootstrap": "^2.9.1",
     "react-icons": "^4.12.0"
+  },
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "description": "eCommerce application built with the MERN Stack ",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server \" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielnuwin/Ecommerce-App.git"
+  },
+  "author": "Daniel Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielnuwin/Ecommerce-App/issues"
+  },
+  "homepage": "https://github.com/danielnuwin/Ecommerce-App#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.3"
   }
 }

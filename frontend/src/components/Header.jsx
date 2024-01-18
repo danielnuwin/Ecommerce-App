@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import { FaAccessibleIcon, FaShoppingCart, FaUser } from 'react-icons/fa';
 import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../assets/logo.png';
 
@@ -17,6 +17,9 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className='ms-auto'>
+                            <LinkContainer to="/test">
+                                <Nav.Link> <FaAccessibleIcon /> Test Screen </Nav.Link>
+                            </LinkContainer>
                             <LinkContainer to="/cart">
                                 <Nav.Link> <FaShoppingCart /> Cart </Nav.Link>
                             </LinkContainer>
